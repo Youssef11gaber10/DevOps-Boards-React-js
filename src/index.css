@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+    background-image: url('./finalProject\ assets/imgs/light-patten.svg');
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+/* .product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+} */
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.navbar-nav .nav-link.active
+{
+    color: #0aad0a !important;
+    font-weight:bolder ;
+}
+
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #0aad0a;
+    width: 300px;
+    height: 300px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin-top:100px;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+.vh-75
+{
+    height: 70vh;
+}
+.min-vh-100{
+
+min-height: 100vh !important;
+}
+body,html
+{
+    min-height: 100vh !important;
+}
+
+::selection
+{
+    background-color: #0aad0a;
+    color: #ffffff;
+}
+
+
+.page-link:focus
+{
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 2px -1px 29px -2px rgba(13,227,47,1) !important;
+    -webkit-box-shadow: 2px -1px 29px -2px rgba(13,227,47,1) !important;
+    -moz-box-shadow: 2px -1px 29px -2px rgba(13,227,47,1) !important;
+}
+
+
+
+
+
+ 
